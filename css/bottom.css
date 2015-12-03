@@ -1,0 +1,123 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	padding:0px;
+	margin:0px;
+	background-color: #f1f2f2;
+	font-family: "Open Sans","Hevetica Neue","Helvetica",Verdana,sans-serif;
+}
+.title{
+	text-align:center;
+	text-height:50px;
+}
+.bottoms{
+	top:0;
+	height: 200px;
+	width:80%;
+	margin-left: auto;
+	margin-right:auto;
+}
+.bottom1{
+	float:left;
+	width:33.33%;
+	height:120px;
+	
+	background-color:#5199AF;
+}
+.bottom2{
+	float:left;
+	width:33.33%;
+	height:120px;
+	
+	background-color:#426CBF;
+}
+.bottom3{
+	float:left;
+	width:33.33%;
+	height:120px;
+	
+    background-color:#240A7A;
+	
+}
+.b1{
+	text-align:center;
+	line-height:40px;
+	margin-top:40px;
+	margin-right:auto;
+	margin-left:auto;
+	width:60%;
+	border: 1px solid white;
+	color:white;
+	display:block;
+	position:relative;
+	
+}
+.b1 span {
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b1:hover{
+	background-color: rgba(255,255,255,0.2);
+}
+.b1:hover span{
+	opacity: 0;
+	-webkit-transform: translate(0,-20px);
+	transform: translate(0,-20px);
+}
+.b1::before{
+	content: attr(data-text);
+	position:absolute;
+	top: 0;
+	left:0;
+	width:100%;
+	height:100%;
+	
+	opacity: 0;
+	-webkit-transform: translate(0,20px);
+	transform: translate(0,20px);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;	
+}
+.b1:hover::before{
+	opacity: 1;
+	-webkit-transform: translate(0, 0);
+	transform: translate(0, 0);
+}
+
+
+
+.b2{
+	text-align:center;
+	line-height:40px;
+	margin-top:40px;
+	margin-right:auto;
+	margin-left:auto;
+	width:60%;
+	border: 1px solid white;
+    color:white;
+	display:block;
+	position:relative;
+	
+}
+.b2::before{
+	content: "";
+	position:absolute;
+	top: 0;
+	left:0;
+	width:0%;
+	height:100%;
+	background-color: rgba(255,255,255,0.3);
+	
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;	
+}
+.b2:hover::before{
+	width:100%;
+    
+}
