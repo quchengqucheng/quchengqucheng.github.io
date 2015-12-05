@@ -1,50 +1,101 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Buttom</title>
-<link type="text/css" rel="stylesheet" href="/css/bottom.css">
-</head>
-
-<body>
-    <div class="bottoms">
-    <h2 class="title">Bottom 1</h2>
-    <div class="bottom1">
-        <div class="b1"  data-text="Login">
-            <a href="/blog">
-           <span>Login</span>
-           </a>
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="http://fonts.useso.com/css?family=Josefin+Slab:400,700" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="shortcut icon" href="icon/faviconi.ico" type="image/x-icon">
+		<link rel="icon" href="icon/faviconi.ico" type="image/x-icon"/>
+		<!--[if lte IE 8]>
+			 <link rel="stylesheet" type="text/css" href="css/simple.css" />
+		<![endif]-->
+    </head>
+    <body>
+        <div class="container">
+			<div class="st-container">
+			
+				<input type="radio" name="radio-set" checked="checked" id="st-control-1"/>
+				<a href="#st-panel-1">Blog</a>
+                
+				<input type="radio" name="radio-set" id="st-control-2"/>
+				<a href="#st-panel-2">Project</a>
+                
+				<input type="radio" name="radio-set" id="st-control-3"/>
+				<a href="#st-panel-3">About</a>
+				
+				<div class="st-scroll">
+				
+					<!-- Placeholder text from http://hipsteripsum.me/ -->
+					
+					<section class="st-panel" id="st-panel-1">
+						<div class="st-deco" data-icon="Blog"></div>
+						<a href="http://quchengqucheng.github.io/blog/">
+                            <h2><span>QuCheng</span></h2> </a>
+						<p>Interested in Front-End and wish to be a front-end engineer.
+                            <br><span>"GET BUSY LIVING."</span></p>
+                        <div class="icon">
+                            <a href="https://github.com/quchengqucheng">
+                                <img src="icon/iconfont-github.png" alt="github"/> </a>
+                            <a href="http://weibo.com/2830316645">
+                                <img src="icon/iconfont-sina.png" alt="sina"/> </a>
+                            <a href="http://www.zhihu.com/people/li-kong-97-11">
+                                <img src="icon/iconfont-zhihu.png" alt="zhihu"/> </a>
+                            <a href="#">
+                                <img src="icon/iconfont-weixin0.png" alt="wechat"/> </a>
+                            <a href="#">
+                                <img src="icon/iconfont-youjian0.png" alt="email"/> </a>
+                        </div>
+					</section>
+					
+					<section class="st-panel st-color" id="st-panel-2">
+						<div class="st-deco" data-icon="Project"></div>
+						<a href="#"><h2>Codes</h2></a>
+						<p>I write some interesting things.</p>
+                        <div class="icon">
+                            <a href="https://github.com/quchengqucheng">
+                                <img src="icon/iconfont-github.png" alt="github"/> </a>
+                            <a href="http://weibo.com/2830316645">
+                                <img src="icon/iconfont-sina.png" alt="sina"/> </a>
+                            <a href="http://www.zhihu.com/people/li-kong-97-11">
+                                <img src="icon/iconfont-zhihu.png" alt="zhihu"/> </a>
+                            <a href="#">
+                                <img src="icon/iconfont-weixin0.png" alt="wechat"/> </a>
+                            <a href="#">
+                                <img src="icon/iconfont-youjian0.png" alt="email"/> </a>
+                        </div>
+					</section>
+					
+					<section class="st-panel" id="st-panel-3">
+						<div class="st-deco" data-icon="About"></div>
+						<h1> 
+                            <div id="mypicture">
+                                <a href="#">
+                                <img src="icon/mypicture.jpg" width="150px" alt="mypicture">
+                                </a>
+                            </div>
+                        </h1>
+						<p><br><br>Hi,I'm qucheng.Nice to meet u!</p>
+                        <div class="icon">
+                            <a href="https://github.com/quchengqucheng">
+                                <img src="icon/iconfont-github.png" alt="github"/> </a>
+                            <a href="http://weibo.com/2830316645">
+                                <img src="icon/iconfont-sina.png" alt="sina"/> </a>
+                            <a href="http://www.zhihu.com/people/li-kong-97-11">
+                                <img src="icon/iconfont-zhihu.png" alt="zhihu"/> </a>
+                            <a href="#">
+                                <img src="icon/iconfont-weixin0.png" alt="wechat"/> </a>
+                            <a href="#">
+                                <img src="icon/iconfont-youjian0.png" alt="email"/> </a>
+                        </div>
+					</section>
+					
+				</div><!-- // st-scroll -->
+				
+			</div><!-- // st-container -->
+			
         </div>
-    </div>
-    <div class="bottom2">
-        <div class="b1"  data-text="Register">
-            <span>Register</span>
-        </div>
-    </div>
-    <div class="bottom3">
-        <div class="b1" data-text="Recover password">
-            <span>Recover password</span>
-        </div>
-    </div>
-    </div>
-    
-    <div class="bottoms">
-        <h2 class="title">Bottom 1</h2>
-    <div class="bottom1">
-        <div class="b2"  data-text="Login">
-            <span>Login</span>
-        </div>
-    </div>
-    <div class="bottom2">
-        <div class="b2"  data-text="Register">
-            <span>Register</span>
-        </div>
-    </div>
-    <div class="bottom3">
-        <div class="b2" data-text="Recover password">
-            <span>Recover password</span>
-        </div>
-    </div>
-    </div>
-</body>
+	</body>
 </html>
